@@ -1,4 +1,3 @@
-// 퀴즈 데이터 배열
 const quizData = [
     {
         question: "‘킹받네’는 무슨 뜻인가요?",
