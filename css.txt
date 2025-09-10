@@ -1,0 +1,71 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e0f2fe; /* Light blue background */
+}
+.quiz-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.question-card {
+    background-color: #f1f5f9; /* Lighter gray */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+.options label {
+    display: block;
+    background-color: #e2e8f0; /* Even lighter gray */
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    user-select: none;
+}
+.options label:hover {
+    background-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+.options input[type="radio"]:checked + label {
+    background-color: #a5b4fc; /* Light purple */
+    color: #4338ca; /* Dark purple text */
+    font-weight: 600;
+}
+.options input[type="radio"] {
+    display: none;
+}
+.result-message {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: none;
+}
+.correct {
+    background-color: #d1fae5; /* Green for correct */
+    color: #065f46;
+}
+.incorrect {
+    background-color: #fee2e2; /* Red for incorrect */
+    color: #991b1b;
+}
+.check-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4338ca; /* Indigo */
+    color: white;
+    font-weight: bold;
+    border-radius: 0.75rem;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.check-button:hover {
+    background-color: #3730a3; /* Darker indigo */
+    transform: translateY(-2px);
+}

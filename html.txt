@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객관식 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="quiz" class="quiz-container">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">신조어 퀴즈</h1>
+        
+        <!-- 퀴즈 문제와 선택지를 보여줄 영역 -->
+        <div id="quiz-content"></div>
+        
+        <button id="check-button" class="check-button mt-4">정답 확인</button>
+        
+        <div id="result-message" class="result-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
